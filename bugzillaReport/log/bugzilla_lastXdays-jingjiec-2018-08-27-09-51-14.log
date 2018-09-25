@@ -1,0 +1,4 @@
+2018-08-27 09:53:30,821 - emailUtil.py:102 - INFO - sendEmail: Email with title [Bugzilla Report] from [2018.07.28] To [2018.08.27] 
+has sent out through email, to-list: ['jingjiec@vmware.com'] and cc: []
+2018-08-27 09:53:30,821 - emailUtil.py:103 - WARNING - sendEmail: If you want more LDAP users to receive this email, please define option -e before run this script
+2018-08-27 09:53:30,822 - emailUtil.py:105 - DEBUG - sendEmail: Images have already sent out through email
