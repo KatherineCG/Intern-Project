@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Prepare directory variables
+CURDIR=$(dirname $(readlink -f $(which "$0")))
+ROOT=$CURDIR/..
+REPORTORDIR=$ROOT/reportor
+
+
+# Collect CAT Testrun Result 
+$REPORTORDIR/cat_testrun_result.py
+
+# Collect CAT Workunit Deployment Matrix
+$REPORTORDIR/cat_workunit_matrix.py

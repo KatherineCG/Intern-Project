@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Prepare directory variables
+CURDIR=$(dirname $(readlink -f $(which "$0")))
+ROOT=$CURDIR/..
+REPORTORDIR=$ROOT/reportor
+
+# Collect Nimbus Qutoa Usage
+$REPORTORDIR/nimbus_quota_usage.py
+

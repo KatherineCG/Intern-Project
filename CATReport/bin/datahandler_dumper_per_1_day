@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Prepare directory variables
+CURDIR=$(dirname $(readlink -f $(which "$0")))
+ROOT=$CURDIR/..
+REPORTORDIR=$ROOT/datahandler/dumper
+
+# Collect Nimbus Qutoa Usage
+$REPORTORDIR/cat_testrun_result.py

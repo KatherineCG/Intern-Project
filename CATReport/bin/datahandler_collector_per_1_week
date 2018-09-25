@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Prepare directory variables
+CURDIR=$(dirname $(readlink -f $(which "$0")))
+ROOT=$CURDIR/..
+REPORTORDIR=$ROOT/datahandler/collector
+
+# Run program by loop the directory
+SCRIPTS=`ls $REPORTORDIR`
+PYTHON="/build/toolchain/lin64/python-2.7.6/bin/python"
+
+for script in $SCRIPTS
+do
+   if [[ $script == *.py ]]
+   then
+      progname=$REPORTORDIR/$script
+      echo $'\n\n'
+      echo "Running Script $progname ..."
+      $PYTHON -B "$progname" "$@"
+   fi
+done

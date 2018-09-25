@@ -1,0 +1,2 @@
+Bug ID,Creation Date,Priority,Status,Assigned To,Reporter,Category,Component,Fix By,Bug Type,Found In,ETA,Summary,Product,Keywords,Time expense (resolved),Duplicate,dup_product
+<a href=https://bugzilla.eng.vmware.com/show_bug.cgi?id=2198185>2198185</a>,2018.09.13 04:04:30,P1,assigned,weil1,tjun,Networking,Teaming/LACP,ESX main,Defect,ESX main ,,Change dvpg teaming and failover configuration tasks fail while doing vm operations,ESX,"featurestress, STNW_BJ",,,
